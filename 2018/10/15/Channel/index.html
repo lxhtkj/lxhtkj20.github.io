@@ -88,17 +88,17 @@
 
 
 
-<meta name="description" content="1.简介">
-<meta property="og:type" content="website">
-<meta property="og:title" content="about">
-<meta property="og:url" content="https://lxhtkj.github.io/about/index.html">
+<meta name="description" content="Channel1.1常用方法说明123456789101112131415161718192021222324252627282930313233343536373839404142private static Channel channels = new DefaultChannelGroup(GlobalEventExectors.INSTANCE);@override  //加入public">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Practices">
+<meta property="og:url" content="https://lxhtkj.github.io/2018/10/15/Channel/index.html">
 <meta property="og:site_name" content="Practices">
-<meta property="og:description" content="1.简介">
+<meta property="og:description" content="Channel1.1常用方法说明123456789101112131415161718192021222324252627282930313233343536373839404142private static Channel channels = new DefaultChannelGroup(GlobalEventExectors.INSTANCE);@override  //加入public">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-10-21T04:36:40.797Z">
+<meta property="og:updated_time" content="2018-10-16T01:49:39.259Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="about">
-<meta name="twitter:description" content="1.简介">
+<meta name="twitter:title" content="Practices">
+<meta name="twitter:description" content="Channel1.1常用方法说明123456789101112131415161718192021222324252627282930313233343536373839404142private static Channel channels = new DefaultChannelGroup(GlobalEventExectors.INSTANCE);@override  //加入public">
 
 
 
@@ -128,13 +128,13 @@
 
 
 
-  <link rel="canonical" href="https://lxhtkj.github.io/about/">
+  <link rel="canonical" href="https://lxhtkj.github.io/2018/10/15/Channel/">
 
 
 
 
 
-  <title>about | Practices</title>
+  <title> | Practices</title>
   
 
 
@@ -301,33 +301,161 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://lxhtkj.github.io/2018/10/15/Channel/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="LXHTKJ">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Practices">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">about</h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <h2 id="1-简介"><a href="#1-简介" class="headerlink" title="1.简介"></a>1.简介</h2>
+          <h1 class="post-title" itemprop="name headline"></h1>
         
-      </div>
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-10-15T16:44:09+08:00">
+                2018-10-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <h2 id="Channel"><a href="#Channel" class="headerlink" title="Channel"></a>Channel</h2><h3 id="1-1常用方法说明"><a href="#1-1常用方法说明" class="headerlink" title="1.1常用方法说明"></a>1.1常用方法说明</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> Channel channels = <span class="keyword">new</span> DefaultChannelGroup(GlobalEventExectors.INSTANCE);</span><br><span class="line"></span><br><span class="line"><span class="meta">@override</span>  <span class="comment">//加入</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">handlerAdded</span><span class="params">(ChannelHandlerContext ctx)</span><span class="keyword">throws</span> Exception</span>&#123;</span><br><span class="line">    Channel joinChannel = ctx.channel();</span><br><span class="line">    <span class="keyword">for</span>(Channel channel:channels)&#123;</span><br><span class="line">        sout(<span class="string">"Address: "</span> + channel.remoteAddress() +<span class="string">"加入服务端……"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    channels.add(joinChannel);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">@override</span>  <span class="comment">//移除</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">HandlerRemove</span><span class="params">(ChannelHandlerContext ctx)</span><span class="keyword">throws</span> Exception</span>&#123;</span><br><span class="line">    Channel removeChannel = ctx.channel();</span><br><span class="line">    <span class="keyword">for</span>(Channel channel:channels)&#123;</span><br><span class="line">        sout(<span class="string">"Address: "</span> + channel.remoteAddress() +<span class="string">"加入服务端……"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    channels.add(removeChannel);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta">@override</span> <span class="comment">//读取完成</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">ChannelReadComplete</span><span class="params">(ChannelHandlerContext ctx)</span><span class="keyword">throws</span> Exception</span>&#123;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">@override</span>  <span class="comment">//在线</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">ChannelActive</span><span class="params">(ChannelHandlerContext ctx)</span><span class="keyword">throws</span> Exception</span>&#123;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line"><span class="meta">@override</span> <span class="comment">//不在线</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">ChannelInActive</span><span class="params">(ChannelHandlerContext ctx)</span><span class="keyword">throws</span> Exception</span>&#123;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line"><span class="meta">@override</span> <span class="comment">//异常处理</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">exceptionCaught</span><span class="params">(ChannelHandlerContext ctx,Throwable cause)</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line">        Channel incoming = ctx.channel();</span><br><span class="line">        System.out.println(<span class="string">"SimpleChatClient:"</span>+incoming.remoteAddress()+<span class="string">"异常"</span>);</span><br><span class="line">        <span class="comment">// 当出现异常就关闭连接</span></span><br><span class="line">        cause.printStackTrace();</span><br><span class="line">        ctx.close();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="2-引用计数"><a href="#2-引用计数" class="headerlink" title="2.引用计数"></a>2.引用计数</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">ByteBuf buf = ctx.alloc().directBuffer();<span class="comment">//新创建的引用对象的初始值为1</span></span><br><span class="line"><span class="keyword">assert</span> buf.refCnt()==<span class="number">1</span>;</span><br><span class="line"><span class="keyword">boolean</span> destoryed = buf.release();<span class="comment">//释放引用计数对象，引用次数就减1，为0时就归还到创建它的对象池</span></span><br><span class="line"><span class="comment">//引用技术对象未销毁时，可以通过retain()方法增加引用次数</span></span><br><span class="line">buf.retain();</span><br><span class="line"><span class="keyword">assert</span> buf.refCnt() == <span class="number">2</span>;</span><br><span class="line"><span class="comment">//销毁对象通过最后访问引用计数对象的部分负责对象的销毁</span></span><br><span class="line">buf.release();</span><br><span class="line"><span class="keyword">assert</span> buf.refCnt() == <span class="number">1</span>;</span><br><span class="line"><span class="comment">//子缓冲区 duplicate(),slice(),order(ByteOrder)方法会创建一个子缓冲区，子缓冲区共享父缓冲区的内存区域。子缓冲区没有自己的引用技术，而是共享父缓冲区的引用计数</span></span><br><span class="line">ByteBuf derived = buf.duplicate();</span><br><span class="line"><span class="keyword">assert</span> buf.refCnt() == <span class="number">1</span>;</span><br><span class="line"><span class="keyword">assert</span> derived.refCnt() == <span class="number">1</span>;</span><br><span class="line"><span class="comment">//buf.copy()和buf.readBytes(int)创建的不是子缓冲区，因此返回的ByteBuf需要释放。由于父缓冲区和子缓冲区共享引用技术，因此在将子缓冲区对象传递到其他组件时，需要先调用retain()</span></span><br><span class="line">      ByteBuf parent = ctx.alloc().directBuffer();</span><br><span class="line">        parent.writeByte(<span class="number">16</span>);</span><br><span class="line">        <span class="keyword">try</span>&#123;</span><br><span class="line">            <span class="keyword">while</span>(parent.isReadable(<span class="number">16</span>))&#123;</span><br><span class="line">                ByteBuf derived = parent.readSlice(<span class="number">16</span>);</span><br><span class="line">                derived.retain();</span><br><span class="line">                process(derived);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">finally</span>&#123;</span><br><span class="line">            parent.release();</span><br><span class="line">        &#125;</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">process</span><span class="params">(ByteBuf buf)</span></span>&#123;</span><br><span class="line">    buf.release();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
       
     </div>
     
     
     
+
+<div>
+      
+        
+
+      
+</div>
+
+    
+
+  
+  <div>
+    <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+
+    </div>
+  
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/10/12/算法复杂度计算/" rel="next" title="">
+                <i class="fa fa-chevron-left"></i> 
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/10/18/SpringCloud提供的功能/" rel="prev" title="">
+                 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
@@ -431,7 +559,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-简介"><span class="nav-number">1.</span> <span class="nav-text">1.简介</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Channel"><span class="nav-number">1.</span> <span class="nav-text">Channel</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1常用方法说明"><span class="nav-number">1.1.</span> <span class="nav-text">1.1常用方法说明</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-引用计数"><span class="nav-number">2.</span> <span class="nav-text">2.引用计数</span></a></li></ol></div>
             
 
           </div>
